@@ -1,0 +1,22 @@
+/* Simple scrollbar styling for a cleaner look */
+#chat-window::-webkit-scrollbar {
+    width: 6px;
+}
+#chat-window::-webkit-scrollbar-track {
+    background: transparent;
+}
+#chat-window::-webkit-scrollbar-thumb {
+    background-color: #a0a0a0;
+    border-radius: 20px;
+    border: 3px solid transparent;
+}
+.dark #chat-window::-webkit-scrollbar-thumb {
+    background-color: #4a4a4a;
+}
+
+/* Prevent layout shift on load and fade in */
+body {
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
